@@ -1,6 +1,23 @@
+
 [
   {
-    "name": "Example website",
-    "url": "https://example.com"
+    "name": "Elite Building",
+    "url": "https://elitebuilding.ca"
+  },
+  {
+    "name": "Kreative Renos",
+    "url": "https://kreativerenos.ca/contact.php"
+  },
+  {
+    "name": "Gravity Contractors",
+    "url": "https://www.gravitycontractors.ca"
+  },
+  {
+    "name": "Trademaster Renovations",
+    "url": "https://trademaster-renovations.com"
+  },
+  {
+    "name": "Cruzz Construction",
+    "url": "https://cruzzconstruction.com/?utm_source=GoogleMyBusiness"
   }
 ]
