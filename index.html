@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101113">
+  <meta name="description" content="A clean, full-screen website showcase with simple navigation.">
+  <title>Website Viewer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="viewer" aria-label="Website showcase">
+    <iframe id="site-frame" title="Featured website" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen" loading="eager"></iframe>
+    <div id="state" class="state" role="status" aria-live="polite" hidden>
+      <div class="state-panel">
+        <span class="state-icon">◈</span>
+        <h1 id="state-heading">Your website showcase</h1>
+        <p id="state-message">Add your website links to sites.json to get started.</p>
+        <a id="state-link" class="state-link" target="_blank" rel="noopener noreferrer" hidden>Open website ↗</a>
+      </div>
+    </div>
+    <div class="floating-controls" aria-label="Website navigation">
+      <span class="active-dot" aria-hidden="true"></span>
+      <div class="site-details">
+        <span id="site-name" class="site-name">Website viewer</span>
+        <span id="site-counter" class="site-counter">0 / 0</span>
+      </div>
+      <div class="control-divider"></div>
+      <button id="prev" class="nav-btn" type="button" aria-label="Previous website" title="Previous website (←)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 18-6-6 6-6"/></svg>
+      </button>
+      <button id="next" class="nav-btn" type="button" aria-label="Next website" title="Next website (→)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 18 6-6-6-6"/></svg>
+      </button>
+      <a id="open-external" class="open-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open current website in new tab" title="Open website in new tab">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 5h6v6M19 5l-9 9"/><path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+      </a>
+    </div>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
